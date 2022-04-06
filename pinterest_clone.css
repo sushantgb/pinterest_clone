@@ -19,10 +19,10 @@
 }
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;
     align-content: center;
     flex-wrap: wrap;
-    padding: 0.5em 0.2em 0.5em 0.2em;
+    padding: 0.3em 0.5em 0.5em 0.5em;
     box-shadow: 5px -5px 10px 0px;
     position: fixed;
     top: 0;
@@ -32,20 +32,19 @@ nav{
 .home, .today{
     display: flex;
     align-items: center;
-    padding: 0.5em 1em;
+    padding: 0.3em 1em;
     border-radius: 2em;
 }
 .pinlogo, .bell, .chat{
     display: flex;
     align-items: center;
-    padding: 0.5em;
+    padding: 0.3em;
     border-radius: 2em;
 }
-
 .profile{
     display: flex;
     align-items: center;
-    padding: 0.5em;
+    padding: 0.3em;
     border-radius: 2em;
     border: solid var(--search);
 }
@@ -57,8 +56,8 @@ nav{
     border: none;
     background-color: var(--search);
     border-radius: 10em;
-    padding: 0.5em;
-    width: 50em;
+    padding: 0em 0.5em;
+    width: 70%;
     gap: 0.5em;
 }
 .prof{
@@ -70,7 +69,7 @@ nav{
 .prof i, .bell i, .chat i{
     font-size: 1.5em;
     color:var(--icon);
-    padding: 0.2em 0.2em;
+    padding: 0.3em 0.3em;
     border-radius: 2em;
 }
 .search input[type=text]{
@@ -80,19 +79,19 @@ nav{
     font-size: 0.9em;
 }
 .pinlogo img, .profile img{
-    width: 2em;
-    height: 2em;
+    width: 1.5em;
+    height: 1.5em;
 }
 .home:hover, .today:hover{
     background-color: var(--search);
 }
-.pinlogo:hover{
-    padding: 0.5em;
-    background-color: var(--search);
+.pinlogo img:hover{
+    width: 2em;
+    height: 2em;
 }
 .prof i:hover, .profile:hover, .bell:hover, .chat:hover{
     background-color: var(--search);
-    padding: 0.5em;
+    padding: 0.3em;
 }
 
 /* Grid setting */
