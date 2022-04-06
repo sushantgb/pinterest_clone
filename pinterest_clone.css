@@ -30,6 +30,7 @@ nav{
     top: 0;
     background-color: #fff;
     width: 100%;
+    z-index: 1000;
 }
 .home, .today{
     display: flex;
