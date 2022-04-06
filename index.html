@@ -1,120 +1,420 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome icons kit script -->
     <script src="https://kit.fontawesome.com/25d4b612b3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="pinterest_clone.css">
     <title>Pinterest Clone</title>
 </head>
+
 <body>
+    <!-- Main container div -->
     <div class="container">
+        <!-- Navigation -->
         <nav>
+            <!-- Pinterest logo -->
             <div class="pinlogo">
                 <img src="pinlogo.png" alt="pinterest logo">
             </div>
+            <!-- Home button -->
             <div class="home">
                 <p>
                     Home
                 </p>
             </div>
+            <!-- Today button -->
             <div class="today">
                 <p>
                     Today
                 </p>
             </div>
+            <!-- Search div -->
             <div class="search">
+                <!-- Search icon -->
                 <p>
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </p>
+                <!-- Search field -->
                 <p>
                     <input type="text" placeholder="Search">
                 </p>
             </div>
+            <!-- Bell icon -->
             <div class="bell">
                 <i class="fa-solid fa-bell"></i>
             </div>
+            <!-- Chat icon -->
             <div class="chat">
                 <i class="fa-solid fa-comment-dots"></i>
             </div>
+            <!-- Profile related div -->
             <div class="prof">
+                <!-- Profile picture -->
                 <div class="profile">
                     <img src="profilelion.png" alt="">
                 </div>
+                <!-- Dropdown button icon for profile -->
                 <div class="downarrow">
                     <i class="fa-solid fa-angle-down"></i>
                 </div>
             </div>
         </nav>
+        <!-- Main body picture gallery -->
         <div class="main_body">
+            <!-- Grid picture gallery -->
             <div class="grid_gallery">
                 <div class="card card_large">
-                    <img src="p1.jpg" alt="primate">
+                    <img src="p1.jpg" alt="Black howler monke facing toward front in shouting pose">
                     <p>Primates</p>
+                    <!-- Div related to overlay effect -->
+                    <div class="hov">
+                        <div class="top">
+                            <div class="leftop">
+                                <h3>Profile</h3>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <div class="rightop">
+                                <p>Save</p>
+                            </div>
+                        </div>
+                        <div class="botright">
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
                 </div>
                 <div class="card card_medium">
-                    <img src="p2.jpg" alt="lady">
+                    <img src="p2.jpg"
+                        alt="Beautiful princess with turquoise flowery headband and the meaning of word Marique meaning sea in Dutch">
                     <p>Interesting Names Meaning.</p>
+                    <!-- Div related to overlay effect -->
+                    <div class="hov">
+                        <div class="top">
+                            <div class="leftop">
+                                <h3>Profile</h3>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <div class="rightop">
+                                <p>Save</p>
+                            </div>
+                        </div>
+                        <div class="botright2">
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
                 </div>
                 <div class="card card_large">
-                    <img src="p3.jpg" alt="lady2">
+                    <img src="p3.jpg"
+                        alt="Lady sitting in forest with clothes made of leaves representing mother earth and meaning of word Gaia is written, the earth">
                     <p>Gaia - The Earth</p>
+                    <!-- Div related to overlay effect -->
+                    <div class="hov">
+                        <div class="top">
+                            <div class="leftop">
+                                <h3>Profile</h3>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <div class="rightop">
+                                <p>Save</p>
+                            </div>
+                        </div>
+                        <div class="botright">
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
                 </div>
                 <div class="card card_medium">
-                    <img src="p4.jpg" alt="primate">
-                    <p>Disney Princesses - Arial</p>
+                    <img src="p4.jpg" alt="Artwork of Disney Redhead Disney princess - Ariel">
+                    <p>Disney Princesses - Ariel</p>
+                    <!-- Div related to overlay effect -->
+                    <div class="hov">
+                        <div class="top">
+                            <div class="leftop">
+                                <h3>Profile</h3>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <div class="rightop">
+                                <p>Save</p>
+                            </div>
+                        </div>
+                        <div class="botright2">
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
                 </div>
                 <div class="card card_medium">
-                    <img src="p5.jpg" alt="lady">
+                    <img src="p5.jpg" alt="Golden monkey sitting calmly">
                     <p>Golden Monkey - Old World Monkey</p>
+                    <!-- Div related to overlay effect -->
+                    <div class="hov">
+                        <div class="top">
+                            <div class="leftop">
+                                <h3>Profile</h3>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <div class="rightop">
+                                <p>Save</p>
+                            </div>
+                        </div>
+                        <div class="botright2">
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
                 </div>
                 <div class="card card_medium">
-                    <img src="p6.jpg" alt="lady2">
+                    <img src="p6.jpg" alt="Three anime girls hugging each other and winking.">
                     <p>Anime Girls - Friends Forever</p>
+                    <!-- Div related to overlay effect -->
+                    <div class="hov">
+                        <div class="top">
+                            <div class="leftop">
+                                <h3>Profile</h3>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <div class="rightop">
+                                <p>Save</p>
+                            </div>
+                        </div>
+                        <div class="botright2">
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
                 </div>
                 <div class="card card_large">
-                    <img src="p7.jpg" alt="primate">
+                    <img src="p7.jpg" alt="Artwork of Disney princess Galatea, Hercules' friend with horse pagasus">
                     <p>Galatea - Disney's Princesses</p>
+                    <!-- Div related to overlay effect -->
+                    <div class="hov">
+                        <div class="top">
+                            <div class="leftop">
+                                <h3>Profile</h3>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <div class="rightop">
+                                <p>Save</p>
+                            </div>
+                        </div>
+                        <div class="botright">
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
                 </div>
                 <div class="card card_small">
-                    <img src="p8.jpg" alt="lady">
+                    <img src="p8.jpg" alt="cute tiger cub hugging mother tiger">
                     <p>Mother's Love</p>
+                    <!-- Div related to overlay effect -->
+                    <div class="hov">
+                        <div class="top">
+                            <div class="leftop">
+                                <h3>Profile</h3>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <div class="rightop">
+                                <p>Save</p>
+                            </div>
+                        </div>
+                        <div class="botright3">
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
                 </div>
                 <div class="card card_small">
-                    <img src="p9.jpg" alt="lady2">
+                    <img src="p9.jpg" alt="white horse running in his ranch with his for legs in air">
                     <p>Horse Riding : A skillful bond</p>
+                    <!-- Div related to overlay effect -->
+                    <div class="hov">
+                        <div class="top">
+                            <div class="leftop">
+                                <h3>Profile</h3>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <div class="rightop">
+                                <p>Save</p>
+                            </div>
+                        </div>
+                        <div class="botright3">
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
                 </div>
                 <div class="card card_large">
-                    <img src="p10.jpg" alt="primate">
+                    <img src="p10.jpg"
+                        alt="strange funny monkey looking at the front in a shocking pose, eyes and mouth wide open">
                     <p>Funny Animals</p>
+                    <!-- Div related to overlay effect -->
+                    <div class="hov">
+                        <div class="top">
+                            <div class="leftop">
+                                <h3>Profile</h3>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <div class="rightop">
+                                <p>Save</p>
+                            </div>
+                        </div>
+                        <div class="botright">
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
                 </div>
                 <div class="card card_medium">
-                    <img src="p11.jpg" alt="lady">
+                    <img src="p11.jpg" alt="beautiful black coloured antelope standing in savannah">
                     <p>NatGeo Wild - Antelopes</p>
+                    <!-- Div related to overlay effect -->
+                    <div class="hov">
+                        <div class="top">
+                            <div class="leftop">
+                                <h3>Profile</h3>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <div class="rightop">
+                                <p>Save</p>
+                            </div>
+                        </div>
+                        <div class="botright2">
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
                 </div>
                 <div class="card card_medium">
-                    <img src="p12.jpg" alt="lady2">
+                    <img src="p12.jpg" alt="anime girl in cute female sailor uniform sitting near sea shore">
                     <p>Anime Sailor Girl</p>
+                    <!-- Div related to overlay effect -->
+                    <div class="hov">
+                        <div class="top">
+                            <div class="leftop">
+                                <h3>Profile</h3>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <div class="rightop">
+                                <p>Save</p>
+                            </div>
+                        </div>
+                        <div class="botright2">
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
                 </div>
                 <div class="card card_small">
-                    <img src="p13.jpg" alt="primate">
+                    <img src="p13.jpg"
+                        alt="digital artwork of a girl in check skirt, pink open shirt and white blouse, posing in two different ways.">
                     <p>Female Trendy Artwork</p>
+                    <!-- Div related to overlay effect -->
+                    <div class="hov">
+                        <div class="top">
+                            <div class="leftop">
+                                <h3>Profile</h3>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <div class="rightop">
+                                <p>Save</p>
+                            </div>
+                        </div>
+                        <div class="botright3">
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
                 </div>
                 <div class="card card_medium">
-                    <img src="p14.gif" alt="lady">
+                    <img src="p14.gif" alt="green bathrobe styled partyware GIF">
                     <p>Amazing Partywares - Homecoming</p>
+                    <!-- Div related to overlay effect -->
+                    <div class="hov">
+                        <div class="top">
+                            <div class="leftop">
+                                <h3>Profile</h3>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <div class="rightop">
+                                <p>Save</p>
+                            </div>
+                        </div>
+                        <div class="botright2">
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
                 </div>
                 <div class="card card_medium">
-                    <img src="p15.jpg" alt="lady2">
+                    <img src="p15.jpg" alt="artwork of maa saraswati with veena in hands">
                     <p>Saraswati Mata - The Goddess of Wisdom</p>
+                    <!-- Div related to overlay effect -->
+                    <div class="hov">
+                        <div class="top">
+                            <div class="leftop">
+                                <h3>Profile</h3>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <div class="rightop">
+                                <p>Save</p>
+                            </div>
+                        </div>
+                        <div class="botright2">
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
                 </div>
                 <div class="card card_large">
-                    <img src="p16.jpg" alt="lady2">
+                    <img src="p16.jpg"
+                        alt="redhead beautiful enchantress in woods with corss on right arm, coming out of pond with sun setting behind her.">
                     <p>Fantasy Photography - Mysterious Enchantress</p>
+                    <!-- Div related to overlay effect -->
+                    <div class="hov">
+                        <div class="top">
+                            <div class="leftop">
+                                <h3>Profile</h3>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <div class="rightop">
+                                <p>Save</p>
+                            </div>
+                        </div>
+                        <div class="botright">
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!-- <div class="hov">
+                <div class="top">
+                    <div class="leftop">
+                        <h3>Profile</h3>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="rightop">
+                        <p>Save</p>
+                    </div>
+                </div>
+                <div class="botright">
+                    <i class="fa-solid fa-ellipsis"></i>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div> -->
+        </div>
+        <!-- floating buttons div -->
+        <div class="icon_btn">
+            <i class="fa-solid fa-plus"></i>
+            <i class="fa-solid fa-question"></i>
         </div>
     </div>
 </body>
+
 </html>

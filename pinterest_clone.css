@@ -7,7 +7,7 @@
     --row_increment:1em;
     --card_s:4;
     --card_m:8;
-    --card_l:9; 
+    --card_l:9;
 }
 *{
     margin: 0;
@@ -16,6 +16,8 @@
 }
 .body{
     margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
 }
 nav{
     display: flex;
@@ -23,7 +25,7 @@ nav{
     align-content: center;
     flex-wrap: wrap;
     padding: 0.3em 0.5em 0.5em 0.5em;
-    box-shadow: 5px -5px 10px 0px;
+    box-shadow: 5px -3px 4px 0px;
     position: fixed;
     top: 0;
     background-color: #fff;
@@ -93,12 +95,11 @@ nav{
     background-color: var(--search);
     padding: 0.3em;
 }
-
 /* Grid setting */
 .main_body{
     display: block;
     margin: 0.2em;
-    margin-top: 6em;
+    margin-top: 5em;
 }
 .grid_gallery{
     display: grid;
@@ -121,14 +122,130 @@ nav{
 }
 .card_small{
     grid-row-end: span var(--card_s);
+    position: relative;
 }
 .card_medium{
     grid-row-end: span var(--card_m);
+    position: relative;
 }
 .card_large{
     grid-row-end: span var(--card_l);
+    position: relative;
+}
+/* Hovering grid settings */
+.hov{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    border-radius: 1em;
+}
+.hov .top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    gap: 2em;
+}
+.hov .leftop{
+    display: flex;
+    margin-top: 1em;
+    gap: 1em;
+    align-items: center;
+    color: #fff;
+}
+.hov .rightop{
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    border-radius: 2em;
+    margin-top: 1em;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+}
+/* botright related to large card */
+.hov .botright{
+    position: relative;
+    top: 17em;
+    left: 7.5em;
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+}
+.hov .botright i{
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 1em;
+}
+/* botright2 related to medium card */
+.hov .botright2{
+    position: relative;
+    top: 14em;
+    left: 7.5em;
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+}
+.hov .botright2 i{
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 1em;
+}
+/* botright3 is related to small card */
+.hov .botright3{
+    position: relative;
+    top: 2em;
+    left: 7.5em;
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+}
+.hov .botright3 i{
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 1em;
+}
+/* hover overlay effect on the cards */
+.card_large:hover .hov, .card_medium:hover .hov, .card_small:hover .hov{
+    opacity: 0.9;
 }
 
+/* floating buttons styling */
+.icon_btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    z-index: 1000;
+}
+.icon_btn i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1em;
+    height: 1em;
+    padding: 1em;
+    border-radius: 50%;
+    box-shadow: 1px 2px 2px 0px #44424266;
+    opacity: 0.8;
+    font-size: 2em;
+    background-color: #fff;
+}
+.icon_btn i:hover{
+    background-color: var(--search);
+}
 
 
 
