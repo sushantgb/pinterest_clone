@@ -315,12 +315,12 @@ nav{
         margin-top: 2em;        
     }
     :root{
-        --card_width:10em;
+        --card_width:10.5em;
         --card_border_radius:1em;
         --row_increment:1em;
-        --card_s:4;
-        --card_m:7;
-        --card_l:8;
+        --card_s:3;
+        --card_m:5;
+        --card_l:6;
     }
     /* hover for mobile view */
     .hov .top{
@@ -328,7 +328,7 @@ nav{
         justify-content: space-around;
         align-items: center;
         align-content: center;
-        gap: 2em;
+        gap: 5em;
         font-size: 0.5em;
     }
     .hov .leftop{
@@ -352,8 +352,8 @@ nav{
     /* botright related to large card */
     .hov .botright{
         position: relative;
-        top: 30em;
-        left: 5.6em;
+        top: 20em;
+        left: 5.9em;
         display: flex;
         align-items: center;
         gap: 0.6em;
@@ -367,8 +367,8 @@ nav{
     /* botright2 related to medium card */
     .hov .botright2{
         position: relative;
-        top: 25em;
-        left: 5.6em;
+        top: 15em;
+        left: 5.9em;
         display: flex;
         align-items: center;
         gap: 0.6em;
@@ -377,8 +377,8 @@ nav{
     /* botright3 is related to small card */
     .hov .botright3{
         position: relative;
-        top: 10em;
-        left: 5.6em;
+        top: 5em;
+        left: 5.9em;
         display: flex;
         align-items: center;
         gap: 0.8em;
