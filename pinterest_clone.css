@@ -99,8 +99,9 @@ nav{
 /* Grid setting */
 .main_body{
     display: block;
-    margin: 0.2em;
     margin-top: 5em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
 }
 .grid_gallery{
     display: grid;
@@ -181,7 +182,7 @@ nav{
     align-items: center;
     gap: 0.8em;
 }
-.hov .botright i{
+.hov .botright i, .hov .botright2 i, .hov .botright3 i {
     border-radius: 50%;
     background-color: #fff;
     padding: 1em;
@@ -195,11 +196,6 @@ nav{
     align-items: center;
     gap: 0.8em;
 }
-.hov .botright2 i{
-    border-radius: 50%;
-    background-color: #fff;
-    padding: 1em;
-}
 /* botright3 is related to small card */
 .hov .botright3{
     position: relative;
@@ -208,11 +204,6 @@ nav{
     display: flex;
     align-items: center;
     gap: 0.8em;
-}
-.hov .botright3 i{
-    border-radius: 50%;
-    background-color: #fff;
-    padding: 1em;
 }
 /* hover overlay effect on the cards */
 .card_large:hover .hov, .card_medium:hover .hov, .card_small:hover .hov{
@@ -248,6 +239,147 @@ nav{
     background-color: var(--search);
 }
 
+/* ---------- For mobile view ---------- */
 
+/* Floating navigation style for mobile view */
+.mobnav{
+    display: none;
+}
+.mobnav i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1em;
+    height: 1em;
+    padding: 1em;
+    border-radius: 50%;
+    opacity: 0.8;
+    font-size: 1em;
+}
+.mobnav img{
+    width: 1em;
+    height: 1em;
+}
+.mobnav i:hover, .mobnav img:hover{
+    background-color: var(--search);
+}
 
-
+/* Scrolling ticker tap menu for mobile view */
+.head_ticker_scroll{
+    display: none;
+}
+.head_ticker_scroll a{
+    text-decoration: none;
+    color: #111;
+    font-weight: bold;
+}
+.head_ticker_scroll a:hover{
+    border-bottom: solid #111;
+}
+/* For responsive mobile view */
+@media only screen and (max-width: 1300px) {
+    nav{
+        display: none;
+    }
+    .head_ticker_scroll{
+        display: flex;
+        overflow: auto;
+        white-space: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1em;
+        padding-top: 1em;
+        padding-left: 0.5em;
+    }
+    .mobnav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1em;
+        position: fixed;
+        left: 50%;
+        bottom: 2em;
+        transform: translate(-50%, -50%);
+        margin: 0 auto;
+        z-index: 1000;
+        border-radius: 2em;
+        background-color: #fff;
+        padding: 0.5em 1em;
+    }
+    .icon_btn{
+        display: none;
+    }
+    .main_body{
+        margin-top: 2em;        
+    }
+    :root{
+        --card_width:10em;
+        --card_border_radius:1em;
+        --row_increment:1em;
+        --card_s:4;
+        --card_m:7;
+        --card_l:8;
+    }
+    /* hover for mobile view */
+    .hov .top{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        gap: 2em;
+        font-size: 0.5em;
+    }
+    .hov .leftop{
+        display: flex;
+        margin-top: 1em;
+        gap: 1em;
+        align-items: center;
+        color: #fff;
+    }
+    .hov .rightop{
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+        border-radius: 2em;
+        margin-top: 1em;
+        color: #fff;
+        font-weight: bold;
+    }
+    /* botright related to large card */
+    .hov .botright{
+        position: relative;
+        top: 21em;
+        left: 5.6em;
+        display: flex;
+        align-items: center;
+        gap: 0.6em;
+        font-size: 0.8em;
+    }
+    .hov .botright i, .hov .botright2 i, .hov .botright3 i {
+        border-radius: 50%;
+        background-color: #fff;
+        padding: 1em;
+    }
+    /* botright2 related to medium card */
+    .hov .botright2{
+        position: relative;
+        top: 17em;
+        left: 5.6em;
+        display: flex;
+        align-items: center;
+        gap: 0.6em;
+        font-size: 0.8em;
+    }
+    /* botright3 is related to small card */
+    .hov .botright3{
+        position: relative;
+        top: 6em;
+        left: 5.6em;
+        display: flex;
+        align-items: center;
+        gap: 0.8em;
+        font-size: 0.8em;
+    }
+}
