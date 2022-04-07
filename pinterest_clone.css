@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500&display=swap');
 :root{
     --fclr:#111;
     --search:rgb(228, 227, 227);
@@ -6,15 +6,15 @@
     --card_width:15em;
     --card_border_radius:1em;
     --row_increment:1em;
-    --card_s:4;
-    --card_m:8;
-    --card_l:9;
+    --card_s:3;
+    --card_m:6;
+    --card_l:7;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Encode Sans', sans-serif;
 }
 .body{
     margin: 0;
@@ -110,7 +110,7 @@ nav{
     grid-template-columns: repeat(auto-fill, var(--card_width));
     grid-auto-rows: var(--row_increment);
     justify-content: center;
-    grid-row-gap: 2em;
+    grid-row-gap: 3em;
     grid-column-gap: 0.8em;
 }
 .grid_gallery img{
@@ -192,7 +192,7 @@ nav{
 /* botright2 related to medium card */
 .hov .botright2{
     position: relative;
-    top: 14em;
+    top: 13em;
     left: 7.5em;
     display: flex;
     align-items: center;
@@ -201,7 +201,7 @@ nav{
 /* botright3 is related to small card */
 .hov .botright3{
     position: relative;
-    top: 2em;
+    top: 1em;
     left: 7.5em;
     display: flex;
     align-items: center;
@@ -285,7 +285,7 @@ nav{
     }
     .head_ticker_scroll{
         display: flex;
-        overflow: auto;
+        overflow: hidden;
         white-space: nowrap;
         justify-content: flex-start;
         align-items: center;
@@ -299,7 +299,7 @@ nav{
         align-items: center;
         gap: 1em;
         position: fixed;
-        left: 50%;
+        left: 45%;
         bottom: 2em;
         transform: translate(-50%, -50%);
         margin: 0 auto;
@@ -352,7 +352,7 @@ nav{
     /* botright related to large card */
     .hov .botright{
         position: relative;
-        top: 21em;
+        top: 30em;
         left: 5.6em;
         display: flex;
         align-items: center;
@@ -367,7 +367,7 @@ nav{
     /* botright2 related to medium card */
     .hov .botright2{
         position: relative;
-        top: 17em;
+        top: 25em;
         left: 5.6em;
         display: flex;
         align-items: center;
@@ -377,7 +377,7 @@ nav{
     /* botright3 is related to small card */
     .hov .botright3{
         position: relative;
-        top: 6em;
+        top: 10em;
         left: 5.6em;
         display: flex;
         align-items: center;
