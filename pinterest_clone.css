@@ -318,9 +318,9 @@ nav{
         --card_width:10.5em;
         --card_border_radius:1em;
         --row_increment:1em;
-        --card_s:2;
-        --card_m:3;
-        --card_l:4;
+        --card_s:3;
+        --card_m:4;
+        --card_l:5;
     }
     /* hover for mobile view */
     .hov .top{
@@ -352,7 +352,7 @@ nav{
     /* botright related to large card */
     .hov .botright{
         position: relative;
-        top: 10em;
+        top: 15em;
         left: 5.9em;
         display: flex;
         align-items: center;
@@ -367,7 +367,7 @@ nav{
     /* botright2 related to medium card */
     .hov .botright2{
         position: relative;
-        top: 5em;
+        top: 10em;
         left: 5.9em;
         display: flex;
         align-items: center;
@@ -377,11 +377,11 @@ nav{
     /* botright3 is related to small card */
     .hov .botright3{
         position: relative;
-        top: 2em;
-        left: 13.5em;
+        top: 5em;
+        left: 5.9em;
         display: flex;
         align-items: center;
         gap: 0.8em;
-        font-size: 0.5em;
+        font-size: 0.8em;
     }
 }
